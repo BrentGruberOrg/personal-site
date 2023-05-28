@@ -1,0 +1,15 @@
+<footer>
+    <hr />
+    {{- partial "inject/footer.html" . -}}
+    {{- partial "footer_columns.html" . -}}
+    <p><small>
+        {{ now.Format "2006" }} &copy; {{ .Site.Copyright | markdownify }}
+    </small></p>
+    <p><small>
+        {{ if site.Params.bmcEnabled | default false }}
+            <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="{{ .Site.Params.bmcSlug }}" data-color="#db5793" data-emoji="" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+            <br/>
+        {{ end }}
+        {{ i18n "themeCopyrightNotice" | safeHTML }}
+    </small></p>
+</footer>
