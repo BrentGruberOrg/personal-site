@@ -9,8 +9,6 @@ tags:
 ---
 
 
-# Python with Docker Compose
-
 Developers hate it, how this one simple trick will lead to rapid python development
 
 That’s it! What we’re going to do is setup a Python API running in docker-compose with hot reload enabled, meaning that any changes you make can be tested instantly once you save the file. If you’re familiar with Docker, you may be asking “How can the container know that I’m making a change to the code?”……Let me show you!
