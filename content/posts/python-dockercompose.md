@@ -1,7 +1,7 @@
 ---
 title: "Python with Docker Compose"
 date: 2023-07-20T09:42:43+01:00
-comments: false
+comments: true
 tags:
   - python
   - docker
